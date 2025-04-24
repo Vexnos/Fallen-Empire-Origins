@@ -187,6 +187,7 @@ playable_fallen_katzen = {
 
     neighbor_system = {
         distance = { min = 0 max = 50 }
+        hyperlane_jumps = 1
         initializer = "playable_fallen_xenophile_barren"
     }
     neighbor_system = {
@@ -386,6 +387,7 @@ playable_fallen_katzen_xenophobe = {
 
     neighbor_system = {
         distance = { min = 0 max = 50 }
+        hyperlane_jumps = 1
         initializer = "playable_fallen_xenophobe_barren"
     }
     neighbor_system = {
@@ -474,7 +476,7 @@ playable_fallen_katzen_materialist = {
 
     planet = {
         name = "NAME_Potradus_Preserve"
-        class = pc_ai
+        class = pc_gaia
         orbit_distance = 25
         orbit_angle = 47
         size = 21
@@ -505,7 +507,7 @@ playable_fallen_katzen_materialist = {
 
         moon = {
             name = "NAME_Nienet"
-            class = pc_ai
+            class = pc_gaia
             size = 12
             orbit_distance = 0
             orbit_angle = 40
@@ -536,7 +538,7 @@ playable_fallen_katzen_materialist = {
 
     planet = {
         name = "NAME_Forcinia"
-        class = pc_ai
+        class = pc_gaia
         size = 10
         orbit_distance = 25
         orbit_angle = { min = 90 max = 270 }
@@ -597,6 +599,7 @@ playable_fallen_katzen_materialist = {
 
     neighbor_system = {
         distance = { min = 0 max = 50 }
+        hyperlane_jumps = 1
         initializer = "playable_fallen_materialist_barren"
     }
     neighbor_system = {
@@ -616,29 +619,36 @@ playable_fallen_katzen_materialist = {
 
 playable_fallen_katzen_o = {
     name = "NAME_Apex_of_Understanding"
-    class = "sc_o"
+    class = sc_giga_o_star
     asteroid_belt = {
         type = rocky_asteroid_belt
-        radius = 200
+        radius = 150
     }
 
     planet = {
-        class = star
+        count = 1
+        class = pc_giga_o_star
         orbit_distance = 0
         orbit_angle = 1
-        size = { min = 20 max = 30 }
+        size = 20
         has_ring = no
     }
 
-    change_orbit = 200
-
     planet = {
-        count = 20
-        class = pc_asteroid
-        orbit_distance = 0
-        orbit_angle = 18
-        size = { min = 2 max = 4 }
-    }
+		class = pc_asteroid
+		count = 1
+		name = "Laboratory Defence"
+		orbit_distance = 150
+		orbit_angle = 20
+	}
+	
+	planet = {
+		class = pc_asteroid
+		count = 17
+		name = "Laboratory Defence"
+		orbit_distance = 0
+		orbit_angle = 20
+	}
 }
 
 playable_fallen_xenophile_barren = {
