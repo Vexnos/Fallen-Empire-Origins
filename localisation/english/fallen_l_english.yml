@@ -1,0 +1,51 @@
+﻿l_english:
+  
+  origin_playable_fallen_empire: "Elder Race (Xenophile)"
+  origin_playable_fallen_empire_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 20)"
+  playable_fallen_xenophile_NAME: "Xenophile Capital"
+  playable_fallen_xenophile_DESC: "Primary System of the Xenophiles"
+
+  origin_playable_fallen_empire_xenophobe: "Elder Race (Xenophobe)"
+  origin_playable_fallen_empire_xenophobe_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_xenophobe_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 25)"
+  playable_fallen_xenophobe_NAME: "Xenophobe Capital"
+  playable_fallen_xenophobe_DESC: "Primary System of the Xenophobes"
+
+  origin_playable_fallen_empire_materialist: "Elder Race (Materialist)"
+  origin_playable_fallen_empire_materialist_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_materialist_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 20)"
+  playable_fallen_materialist_NAME: "Materialist Capital"
+  playable_fallen_materialist_DESC: "Primary System of the Materialists"
+
+  origin_playable_fallen_empire_machine: "Elder Race (Machine)"
+  origin_playable_fallen_empire_machine_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_machine_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_shattered_ring']"
+  playable_fallen_machine_NAME: "Alpha Refuge"
+  playable_fallen_machine_DESC: "Primary Ringworld of the Caretakers"
+
+  origin_playable_fallen_empire_pacifist: "Elder Race (Pacifist)"
+  origin_playable_fallen_empire_pacifist_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_pacifist_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 30)"
+  playable_fallen_pacifist_NAME: "Harmony"
+  playable_fallen_pacifist_DESC: "Primary System of the Pacifists"
+
+  origin_playable_fallen_empire_katzen: "Elder Race (Katzen)"
+  origin_playable_fallen_empire_katzen_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_katzen_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 24)"
+  playable_fallen_katzen_NAME: "Katzen Capital"
+  playable_fallen_katzen_DESC: "Primary System of the Katzen"
+  
+  diplo_stance_player_dormant: "Dormant"
+  diplo_stance_player_dormant_desc: "This empire has remained dormant for some time and tend to keep out of galactic affairs."
+
+  NAME_Gatzo: "Gatzo"
+  NAME_Katzenland: "Katzenland"
+  NAME_Potradus_Preserve: "Protradus Preserve"
+  NAME_Nienet: "Nienet"
+  NAME_Paluushia: "Paluushia"
+  NAME_Forcinia: "Forcinia"
+  NAME_Vicke: "Vicke"
+  NAME_Teratre: "Teratre"
+
+  requires_not_dormant: "$TRIGGER_FAIL$§RWe cannot engage in diplomacy or war when our diplomatic stance is Dormant.§!"

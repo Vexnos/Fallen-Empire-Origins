@@ -1,0 +1,178 @@
+origin_playable_fallen_empire = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_galactic_doorstep
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_xenophile }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            OR = {
+                value = ethic_xenophile
+                value = ethic_fanatic_xenophile
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_playable_fallen_empire_xenophobe = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_arc_welders
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_xenophobe }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_xenophile value = ethic_fanatic_xenophile }
+            OR = {
+                value = ethic_xenophobe
+                value = ethic_fanatic_xenophobe
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_xenophobe_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_playable_fallen_empire_materialist = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_doomsday
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_materialist }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_spiritualist value = ethic_fanatic_spiritualist }
+            OR = {
+                value = ethic_materialist
+                value = ethic_fanatic_materialist
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_materialist_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_playable_fallen_empire_machine = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_shattered_ring
+
+    starting_colony = pc_shattered_ring_habitable
+    habitability_preference = pc_shattered_ring_habitable
+    initializers = { playable_fallen_machine }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { value = MACHINE }
+    }
+
+    description = origin_playable_fallen_empire_machine_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_playable_fallen_empire_pacifist = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_common_ground
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_pacifist }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_militarist value = ethic_fanatic_militarist }
+            OR = {
+                value = ethic_pacifist
+                value = ethic_fanatic_pacifist
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_pacifist_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_playable_fallen_empire_katzen = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_toxic_knights
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_katzen }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            OR = {
+                value = ethic_xenophile
+                value = ethic_fanatic_xenophile
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_katzen_effects
+    
+    random_weight = {
+        base = 0
+    }
+}

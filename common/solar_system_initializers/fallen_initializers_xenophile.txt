@@ -1,0 +1,412 @@
+@base_moon_distance = 10
+
+playable_fallen_xenophile = {
+	usage = origin
+	class = "sc_b"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 50
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = {
+			set_planet_flag = cant_target_this_planet
+			create_ambient_object = {
+				type = "giga_fe_shield"
+				location = this
+				use_3d_location = yes
+				entity_offset = { min = 0 max = 0 }
+				entity_offset_angle = { min = 0 max = 0 }
+				entity_offset_height = { min = -15 max = -15 }
+				scale = 1
+			}
+		}
+	}
+
+	change_orbit = 50
+
+	planet = {
+		count = { min = 1 max = 3 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+
+	planet = {
+		name = "NAME_Sky_Father"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+
+		init_effect = {
+			save_event_target_as = thirdyggdrasil_orchid_planet
+			giga_field_debris = yes
+			set_planet_flag = hot_zone
+			set_planet_flag = megastructure
+			set_planet_flag = giga_planet_mega
+			giga_set_has_mega_flag = yes
+		}
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "NAME_Cradle"
+			class = "pc_gaia"
+			size = 20
+			orbit_distance = 5
+			orbit_angle = 20
+			deposit_blockers = none
+			modifiers = none
+			starting_planet = yes
+
+			init_effect = {
+				prevent_anomaly = yes
+				generate_start_deposits_and_blockers = yes
+			}
+		}
+
+		moon = {
+			name = "NAME_Sister"
+			class = "pc_broken"
+			size = 13
+			orbit_distance = 5
+			orbit_angle = 50
+
+			init_effect = { prevent_anomaly = yes }
+		}
+
+		moon = {
+			name = "NAME_Brother"
+			class = "pc_gaia"
+			size = 10
+			orbit_distance = 8
+			orbit_angle = 10
+			deposit_blockers = none
+			modifiers = none
+
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+
+		moon = {
+			name = "NAME_Mother"
+			class = "pc_gaia"
+			size = 12
+			orbit_distance = 5
+			orbit_angle = 190
+			deposit_blockers = none
+			modifiers = none
+
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		spawn_megastructure = {
+			type = "yggdrasil_orchid_ruined"
+			coords_from = event_target:thirdyggdrasil_orchid_planet
+		}
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_xeno_zoo"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_orbital_1"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_orbital_2"
+	}
+}
+
+playable_fallen_xeno_zoo = {
+	class = "rl_standard_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 80
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 70
+
+	planet = {
+		count = 1
+		orbit_distance = 15
+		class = "pc_gaia"
+		name = "NAME_The_Preserve"
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+
+		orbit_angle = 60
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	change_orbit = -45
+
+	planet = {
+		count = { min = 1 max = 1 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
+
+# Shattered Planet 1
+playable_fallen_shattered_1 = {
+	class = "rl_standard_stars"
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 20
+		class = pc_shattered
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 25
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
+
+# Shattered Planet 2
+playable_fallen_shattered_2 = {
+	class = "rl_standard_stars"
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 20
+		class = pc_shattered
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 25
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
+
+# Shattered Planet 3
+playable_fallen_shattered_3 = {
+	class = "rl_standard_stars"
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 35
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 15
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 20
+		class = pc_shattered
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 1 max = 3 }
+		orbit_distance = 25
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		orbit_distance = 20
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 3 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 20
+		class = random_non_colonizable
+		orbit_angle = { min = 90 max = 270 }
+	}
+}

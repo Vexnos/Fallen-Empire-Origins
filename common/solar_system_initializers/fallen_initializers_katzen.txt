@@ -1,0 +1,236 @@
+@base_moon_distance = 10
+
+playable_fallen_katzen = {
+    usage = origin
+    class = "sc_a"
+    name = "NAME_Gatzo"
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 40
+    }
+
+    init_effect = {
+        generate_home_system_resources = yes
+        every_neighbor_system = {
+            set_star_flag = empire_cluster
+            every_neighbor_system = {
+                set_star_flag = empire_cluster
+            }
+        }
+    }
+
+    planet = {
+        class = star
+        orbit_distance = 0
+        orbit_angle = 1
+        size = 28
+        has_ring = no
+
+        init_effect = {
+			set_planet_flag = cant_target_this_planet
+			create_ambient_object = {
+				type = "giga_fe_shield"
+				location = this
+				use_3d_location = yes
+				entity_offset = { min = 0 max = 0 }
+				entity_offset_angle = { min = 0 max = 0 }
+				entity_offset_height = { min = -15 max = -15 }
+				scale = 1
+			}
+		}
+    }
+
+    change_orbit = 40
+
+    planet = {
+        count = { min = 1 max = 3 }
+        class = pc_asteroid
+        orbit_distance = 0
+        orbit_angle = { min = 90 max = 270 }
+    }
+
+    planet = {
+        name = "NAME_Potradus_Preserve"
+        class = pc_gaia
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = 21
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+
+    planet = {
+        name = "NAME_Katzenland"
+        class = pc_gaia
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = 24
+        starting_planet = yes
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+        init_effect = {
+            prevent_anomaly = yes
+            generate_start_deposits_and_blockers = yes
+        }
+
+        change_orbit = @base_moon_distance
+
+        moon = {
+            name = "NAME_Nienet"
+            class = pc_gaia
+            size = 12
+            orbit_distance = 5
+            orbit_angle = { min = 90 max = 270 }
+            deposit_blockers = none
+            modifiers = none
+
+            init_effect = {
+                prevent_anomaly = yes
+            }
+        }
+
+        moon = {
+            name = "NAME_Paluushia"
+            class = pc_continental
+            size = 16
+            orbit_distance = 8
+            orbit_angle = { min = 90 max = 270 }
+            modifiers = none
+            deposit_blockers = none
+
+            init_effect = {
+                prevent_anomaly = yes
+            }
+        }
+    }
+
+    planet = {
+        name = "NAME_Forcinia"
+        class = pc_gaia
+        size = 10
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+
+    planet = {
+        name = "NAME_Vicke"
+        class = pc_gaia
+        size = 14
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        has_ring = no
+        modifiers = none
+        deposit_blockers = none
+        
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+
+    planet = {
+        name = "NAME_Teratre"
+        class = pc_molten
+        size = 17
+        orbit_distance = 30
+        orbit_angle = { min = 90 max = 270 }
+        has_ring = no
+        
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    }
+
+    neighbor_system = {
+        distance = { min = 0 max = 50 }
+        initializer = "playable_fallen_xenophile_barren"
+    }
+    neighbor_system = {
+        distance = { min = 0 max = 50 }
+        initializer = "playable_fallen_orbital_1"
+    }
+    neighbor_system = {
+        distance = { min = 0 max = 50 }
+        initializer = "playable_fallen_orbital_2"
+    }
+}
+
+playable_fallen_xenophile_barren = {
+	class = "rl_standard_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 50
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 50
+
+	planet = {
+		count = { min = 1 max = 3 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+
+	planet = {
+		name = "NAME_Sky_Father"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "NAME_Cradle"
+			class = "pc_barren"
+			size = 20
+			orbit_distance = 5
+			orbit_angle = 20
+		}
+
+		moon = {
+			name = "NAME_Sister"
+			class = "pc_broken"
+			size = 13
+			orbit_distance = 5
+			orbit_angle = 50
+		}
+
+		moon = {
+			name = "NAME_Brother"
+			class = "pc_barren"
+			size = 10
+			orbit_distance = 8
+			orbit_angle = 10
+		}
+
+		moon = {
+			name = "NAME_Mother"
+			class = "pc_barren"
+			size = 12
+			orbit_distance = 5
+			orbit_angle = 190
+		}
+	}
+}

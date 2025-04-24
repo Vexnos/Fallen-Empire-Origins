@@ -1,0 +1,181 @@
+@base_moon_distance = 10
+
+playable_fallen_pacifist = {
+	class = "rl_standard_stars"
+	usage = origin
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		init_effect = {
+			set_planet_flag = cant_target_this_planet
+			create_ambient_object = {
+				type = "giga_fe_shield"
+				location = this
+				use_3d_location = yes
+				entity_offset = { min = 0 max = 0 }
+				entity_offset_angle = { min = 0 max = 0 }
+				entity_offset_height = { min = -15 max = -15 }
+				scale = 1
+			}
+		}
+	}
+
+	planet = {
+		orbit_distance = 70
+		class = pc_gaia
+		orbit_angle = 50
+		size = 25
+		name = "NAME_Darad"
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_4
+		}
+	}
+
+	planet = {
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 25
+		class = pc_gaia
+		starting_planet = yes
+		has_ring = yes
+
+		name = "NAME_Shallash"
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			name = "NAME_Shallasha"
+			orbit_angle = 0
+			orbit_distance = 6
+			size = { min = 10 max = 16 } #bit larger than normal moons, they started off as moons of a gas giant
+			class = pc_tropical
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = "NAME_Shallashb"
+			orbit_angle = 60
+			orbit_distance = 0
+			size = { min = 12 max = 16 }
+			class = pc_continental
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = "NAME_Shallashc"
+			orbit_angle = 60
+			orbit_distance = 0
+			size = { min = 10 max = 16 }
+			class = pc_desert
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = "NAME_Shallashd"
+			orbit_angle = 60
+			orbit_distance = 0
+			size = { min = 10 max = 16 }
+			class = pc_alpine
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = "NAME_Shallashe"
+			orbit_angle = 60
+			orbit_distance = 0
+			size = { min = 10 max = 16 }
+			class = pc_arctic
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		moon = {
+			name = "NAME_Shallashf"
+			orbit_angle = 60
+			orbit_distance = 0
+			size = { min = 10 max = 16 }
+			class = pc_ocean
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+		init_effect = {
+			prevent_anomaly = yes
+			generate_start_deposits_and_blockers = yes
+		}
+	}
+
+	change_orbit = 55
+	planet = {
+		count = 4
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 15 max = 345 }
+		init_effect = {
+			prevent_anomaly = yes
+			random_list = {
+				4 = { }
+				2 = {
+					clear_deposits = yes
+					set_deposit = d_minerals_3
+				}
+				2 = {
+					clear_deposits = yes
+					set_deposit = d_minerals_4
+				}
+				1 = {
+					clear_deposits = yes
+					set_deposit = d_minerals_5
+				}
+				1 = {
+					clear_deposits = yes
+					set_deposit = d_volatile_motes_2
+				}
+			}
+		}
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = 3
+		class = pc_gas_giant
+		orbit_distance = 45
+		orbit_angle = { min = 35 max = 325 }
+	}
+
+	init_effect = {
+		generate_home_system_resources = yes
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_orbital_1"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_orbital_2"
+	}
+}
