@@ -524,8 +524,8 @@ playable_fallen_xenophobe_barren = {
 	planet = {
 		name = "NAME_The_Core"
 		orbit_distance = 20
-		class = pc_barren
-        entity = "nuked_planet_01_entity"
+		class = pc_katzenland
+        # entity = "nuked_planet_01_entity"
 		orbit_angle = { min = 90 max = 270 }
 		size = 25
 
@@ -535,8 +535,8 @@ playable_fallen_xenophobe_barren = {
 
 		moon = {
 			name = "NAME_Boundary"
-			class = pc_barren
-            entity = "nuked_planet_01_entity"
+			class = pc_katzenland
+            # entity = "nuked_planet_01_entity"
 			size = 12
 			orbit_distance = 14
 			orbit_angle = 10
