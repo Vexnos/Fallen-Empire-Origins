@@ -2,11 +2,11 @@
 
 playable_fallen_katzen = {
     usage = origin
-    class = "sc_a"
+    class = "sc_k"
     name = "NAME_Gatzo"
     asteroid_belt = {
         type = rocky_asteroid_belt
-        radius = 40
+        radius = 30
     }
 
     init_effect = {
@@ -17,13 +17,14 @@ playable_fallen_katzen = {
                 set_star_flag = empire_cluster
             }
         }
+        generate_home_system_resources = yes
     }
 
     planet = {
         class = star
         orbit_distance = 0
         orbit_angle = 1
-        size = { min = 20 max = 30 }
+        size = 20
         has_ring = no
 
         init_effect = {
@@ -40,22 +41,34 @@ playable_fallen_katzen = {
 		}
     }
 
-    change_orbit = 40
+    planet = {
+        class = pc_asteroid
+        orbit_distance = 30
+        orbit_angle = 15
+        size = 1
+    }
 
     planet = {
-        count = { min = 1 max = 3 }
         class = pc_asteroid
         orbit_distance = 0
-        orbit_angle = { min = 90 max = 270 }
+        orbit_angle = 47
+        size = 2
+    }
+
+    planet = {
+        class = pc_asteroid
+        orbit_distance = 0
+        orbit_angle = -145
+        size = 3
     }
 
     planet = {
         name = "NAME_Potradus_Preserve"
         class = pc_gaia
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 270 }
+        orbit_distance = 25
+        orbit_angle = 47
         size = 21
-        has_ring = no
+        has_ring = yes
         modifiers = none
         deposit_blockers = none
         init_effect = {
@@ -66,8 +79,8 @@ playable_fallen_katzen = {
     planet = {
         name = "NAME_Katzenland"
         class = pc_gaia
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 270 }
+        orbit_distance = 25
+        orbit_angle = 71
         size = 24
         starting_planet = yes
         has_ring = no
@@ -84,10 +97,11 @@ playable_fallen_katzen = {
             name = "NAME_Nienet"
             class = pc_gaia
             size = 12
-            orbit_distance = 5
-            orbit_angle = { min = 90 max = 270 }
+            orbit_distance = 0
+            orbit_angle = 40
             deposit_blockers = none
             modifiers = none
+            has_ring = no
 
             init_effect = {
                 prevent_anomaly = yes
@@ -98,8 +112,9 @@ playable_fallen_katzen = {
             name = "NAME_Paluushia"
             class = pc_continental
             size = 16
-            orbit_distance = 8
-            orbit_angle = { min = 90 max = 270 }
+            orbit_distance = 5
+            orbit_angle = 140
+            has_ring = no
             modifiers = none
             deposit_blockers = none
 
@@ -113,14 +128,23 @@ playable_fallen_katzen = {
         name = "NAME_Forcinia"
         class = pc_gaia
         size = 10
-        orbit_distance = 30
+        orbit_distance = 25
         orbit_angle = { min = 90 max = 270 }
-        has_ring = no
+        has_ring = yes
         modifiers = none
         deposit_blockers = none
 
         init_effect = {
             prevent_anomaly = yes
+        }
+
+        moon = {
+            name = "NAME_Ruspiayama"
+            class = pc_barren_cold
+            size = 7
+            orbit_distance = 7
+            orbit_angle = 40
+            has_ring = no
         }
     }
 
@@ -128,8 +152,8 @@ playable_fallen_katzen = {
         name = "NAME_Vicke"
         class = pc_gaia
         size = 14
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 270 }
+        orbit_distance = 25
+        orbit_angle = 17
         has_ring = no
         modifiers = none
         deposit_blockers = none
@@ -144,11 +168,20 @@ playable_fallen_katzen = {
         class = pc_molten
         size = 17
         orbit_distance = 25
-        orbit_angle = { min = 90 max = 270 }
+        orbit_angle = 85
         has_ring = no
         
         init_effect = {
             prevent_anomaly = yes
+        }
+
+        moon = {
+            name = "NAME_Vertrois"
+            class = pc_barren_cold
+            size = 5
+            orbit_distance = 10
+            orbit_angle = 110
+            has_ring = no
         }
     }
 
