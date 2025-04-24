@@ -67,6 +67,7 @@ playable_fallen_xenophobe = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			generate_start_deposits_and_blockers = yes
 		}
 
 		moon = {
@@ -80,7 +81,6 @@ playable_fallen_xenophobe = {
 
 			init_effect = {
 				prevent_anomaly = yes
-				generate_start_deposits_and_blockers = yes
 			}
 		}
 	}

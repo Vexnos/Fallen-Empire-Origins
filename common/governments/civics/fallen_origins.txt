@@ -176,3 +176,34 @@ origin_playable_fallen_empire_katzen = {
         base = 0
     }
 }
+
+origin_playable_fallen_empire_katzen_xenophobe = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_payback
+
+    starting_colony = pc_gaia
+    habitability_preference = pc_gaia
+    initializers = { playable_fallen_katzen_xenophobe }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            OR = {
+                value = ethic_xenophile
+                value = ethic_fanatic_xenophile
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_katzen_xenophobe_effects
+    
+    random_weight = {
+        base = 0
+    }
+}

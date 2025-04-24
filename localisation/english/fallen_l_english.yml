@@ -35,6 +35,12 @@
   origin_playable_fallen_empire_katzen_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 24)"
   playable_fallen_katzen_NAME: "Katzen Capital"
   playable_fallen_katzen_DESC: "Primary System of the Katzen"
+
+  origin_playable_fallen_empire_katzen_xenophobe: "Elder Race (Xenophobe Katzen)"
+  origin_playable_fallen_empire_katzen_xenophobe_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_katzen_xenophobe_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 24)"
+  playable_fallen_katzen_xenophobe_NAME: "Katzen Capital"
+  playable_fallen_katzen_xenophobe_DESC: "Primary System of the Katzen"
   
   diplo_stance_player_dormant: "Dormant"
   diplo_stance_player_dormant_desc: "This empire has remained dormant for some time and tend to keep out of galactic affairs."
