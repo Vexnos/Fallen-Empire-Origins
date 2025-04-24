@@ -4,7 +4,7 @@ can_support_branch_offices = {
 		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
 		NOR = {
 			is_country_type = fallen_empire
-            is_country_type = ascended_empire
+			is_country_type = ascended_empire
 			is_country_type = awakened_fallen_empire
 		}
 	}
