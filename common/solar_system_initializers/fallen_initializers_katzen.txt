@@ -386,7 +386,7 @@ playable_fallen_katzen_xenophobe = {
 
     neighbor_system = {
         distance = { min = 0 max = 50 }
-        initializer = "playable_fallen_xenophile_barren"
+        initializer = "playable_fallen_xenophobe_barren"
     }
     neighbor_system = {
         distance = { min = 0 max = 50 }
