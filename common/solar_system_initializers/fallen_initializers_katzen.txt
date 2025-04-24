@@ -396,6 +396,18 @@ playable_fallen_katzen_xenophobe = {
         distance = { min = 0 max = 50 }
         initializer = "playable_fallen_orbital_2"
     }
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_shielded_1"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_shielded_2"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_shielded_3"
+	}
 }
 
 playable_fallen_xenophile_barren = {
@@ -482,19 +494,6 @@ playable_fallen_xenophobe_barren = {
 		orbit_angle = 1
 		size = { min = 20 max = 30 }
 		has_ring = no
-
-		init_effect = {
-			set_planet_flag = cant_target_this_planet
-			create_ambient_object = {
-				type = "giga_fe_shield"
-				location = this
-				use_3d_location = yes
-				entity_offset = { min = 0 max = 0 }
-				entity_offset_angle = { min = 0 max = 0 }
-				entity_offset_height = { min = -15 max = -15 }
-				scale = 1
-			}
-		}
 	}
 
 	change_orbit = 50
@@ -525,7 +524,8 @@ playable_fallen_xenophobe_barren = {
 	planet = {
 		name = "NAME_The_Core"
 		orbit_distance = 20
-		class = pc_irradiated
+		class = pc_barren
+        entity = "nuked_planet_01_entity"
 		orbit_angle = { min = 90 max = 270 }
 		size = 25
 
@@ -535,7 +535,8 @@ playable_fallen_xenophobe_barren = {
 
 		moon = {
 			name = "NAME_Boundary"
-			class = "pc_irradiated"
+			class = pc_barren
+            entity = "nuked_planet_01_entity"
 			size = 12
 			orbit_distance = 14
 			orbit_angle = 10
@@ -576,36 +577,5 @@ playable_fallen_xenophobe_barren = {
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
 		}
-	}
-
-	init_effect = {
-		generate_home_system_resources = yes
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
-
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_orbital_1"
-	}
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_orbital_2"
-	}
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_shielded_1"
-	}
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_shielded_2"
-	}
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_shielded_3"
 	}
 }
