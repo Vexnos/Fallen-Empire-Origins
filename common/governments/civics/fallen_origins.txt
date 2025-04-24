@@ -14,7 +14,7 @@ origin_playable_fallen_empire = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            NOR = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
             OR = {
                 value = ethic_xenophile
                 value = ethic_fanatic_xenophile
@@ -45,7 +45,7 @@ origin_playable_fallen_empire_xenophobe = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_xenophile value = ethic_fanatic_xenophile }
+            NOR = { value = ethic_xenophile value = ethic_fanatic_xenophile }
             OR = {
                 value = ethic_xenophobe
                 value = ethic_fanatic_xenophobe
@@ -76,7 +76,7 @@ origin_playable_fallen_empire_materialist = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_spiritualist value = ethic_fanatic_spiritualist }
+            NOR = { value = ethic_spiritualist value = ethic_fanatic_spiritualist }
             OR = {
                 value = ethic_materialist
                 value = ethic_fanatic_materialist
@@ -131,7 +131,7 @@ origin_playable_fallen_empire_pacifist = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_militarist value = ethic_fanatic_militarist }
+            NOR = { value = ethic_militarist value = ethic_fanatic_militarist }
             OR = {
                 value = ethic_pacifist
                 value = ethic_fanatic_pacifist
@@ -162,7 +162,7 @@ origin_playable_fallen_empire_katzen = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            NOR = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
             OR = {
                 value = ethic_xenophile
                 value = ethic_fanatic_xenophile
@@ -193,10 +193,10 @@ origin_playable_fallen_empire_katzen_xenophobe = {
     possible = {
         species_archetype = { NOT = { value = MACHINE } }
         ethics = {
-            NOT = { value = ethic_xenophobe value = ethic_fanatic_xenophobe }
+            NOR = { value = ethic_xenophile value = ethic_fanatic_xenophile }
             OR = {
-                value = ethic_xenophile
-                value = ethic_fanatic_xenophile
+                value = ethic_xenophobe
+                value = ethic_fanatic_xenophobe
             }
         }
     }
