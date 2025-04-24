@@ -8,6 +8,30 @@ playable_fallen_xenophile = {
 		radius = 50
 	}
 
+	init_effect = {
+		generate_home_system_resources = yes
+		spawn_megastructure = {
+			type = "yggdrasil_orchid_ruined"
+			coords_from = event_target:thirdyggdrasil_orchid_planet
+		}
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		if = {
+			limit = {
+				is_inside_nebula = no
+			}
+			create_nebula = {
+				radius = 25
+				effect = { nebula_cloaking_effect = yes }
+			}
+			set_star_flag = ocean_paradise_nebula
+		}
+	}
+
 	planet = {
 		count = 1
 		class = star
@@ -109,20 +133,6 @@ playable_fallen_xenophile = {
 
 			init_effect = {
 				prevent_anomaly = yes
-			}
-		}
-	}
-
-	init_effect = {
-		generate_home_system_resources = yes
-		spawn_megastructure = {
-			type = "yggdrasil_orchid_ruined"
-			coords_from = event_target:thirdyggdrasil_orchid_planet
-		}
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
 			}
 		}
 	}
