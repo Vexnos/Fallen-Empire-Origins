@@ -262,7 +262,7 @@ playable_fallen_katzen_xenophobe = {
     }
 
     planet = {
-        name = "NAME_Potradus_Preserve"
+        name = "NAME_Neu_Katzenland"
         class = pc_gaia
         orbit_distance = 25
         orbit_angle = 47
@@ -294,7 +294,7 @@ playable_fallen_katzen_xenophobe = {
 
         moon = {
             name = "NAME_Nienet"
-            class = pc_gaia
+            class = pc_shattered_2
             size = 12
             orbit_distance = 0
             orbit_angle = 40

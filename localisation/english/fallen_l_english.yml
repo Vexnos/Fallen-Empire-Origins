@@ -55,5 +55,6 @@
   NAME_Teratre: "Teratre"
   NAME_Ruspiayama: "Ruspiayama"
   NAME_Vertrois: "Vertrois"
+  NAME_Neu_Katzenland: "Neu-Katzenland"
 
   requires_not_dormant: "$TRIGGER_FAIL$§RWe cannot engage in diplomacy or war when our diplomatic stance is Dormant.§!"
