@@ -158,6 +158,8 @@ diplomatic_stance = {
 					has_origin = origin_playable_fallen_empire_pacifist
 					has_origin = origin_playable_fallen_empire_machine
 					has_origin = origin_playable_fallen_empire_katzen
+					has_origin = origin_playable_fallen_empire_katzen_xenophobe
+					has_origin = origin_playable_fallen_empire_katzen_materialist
 				}
 			}
 		}
