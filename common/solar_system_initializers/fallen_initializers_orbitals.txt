@@ -1,7 +1,7 @@
 @base_moon_distance = 10
 
 playable_fallen_orbital_1 = {
-    class = "rl_standard_stars"
+    class = "sc_b"
 
     planet = {
         count = 1
@@ -39,7 +39,7 @@ playable_fallen_orbital_1 = {
 }
 
 playable_fallen_orbital_2 = {
-    class = "rl_standard_stars"
+    class = "sc_m_giant"
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt

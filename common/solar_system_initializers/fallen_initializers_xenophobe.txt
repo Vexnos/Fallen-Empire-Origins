@@ -129,6 +129,10 @@ playable_fallen_xenophobe = {
 
 	neighbor_system = {
 		distance = { min = 0 max = 50 }
+		initializer = "playable_fallen_xenophobe_neutron_star"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 50 }
 		initializer = "playable_fallen_orbital_1"
 	}
 	neighbor_system = {
@@ -146,6 +150,32 @@ playable_fallen_xenophobe = {
 	neighbor_system = {
 		distance = { min = 0 max = 50 }
 		initializer = "playable_fallen_shielded_3"
+	}
+}
+
+# Xenophobe Neutron Star
+playable_fallen_xenophobe_neutron_star = {
+	class = "sc_neutron_star"
+
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = rl_unhabitable_planets
+		count = { min = 1 max = 6 }
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			class = rl_unhabitable_planets
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = { min = 0 max = 5 }
+		}
 	}
 }
 

@@ -2,7 +2,7 @@
 
 playable_fallen_xenophile = {
 	usage = origin
-	class = "sc_b"
+	class = "sc_a"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 50
