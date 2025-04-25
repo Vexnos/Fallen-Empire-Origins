@@ -10,10 +10,6 @@ playable_fallen_xenophile = {
 
 	init_effect = {
 		generate_home_system_resources = yes
-		spawn_megastructure = {
-			type = "yggdrasil_orchid_ruined"
-			coords_from = event_target:thirdyggdrasil_orchid_planet
-		}
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
 			every_neighbor_system = {
@@ -70,15 +66,6 @@ playable_fallen_xenophile = {
 		orbit_angle = 200
 		size = 30
 		has_ring = no
-
-		init_effect = {
-			save_event_target_as = thirdyggdrasil_orchid_planet
-			giga_field_debris = yes
-			set_planet_flag = hot_zone
-			set_planet_flag = megastructure
-			set_planet_flag = giga_planet_mega
-			giga_set_has_mega_flag = yes
-		}
 
 		change_orbit = @base_moon_distance
 
