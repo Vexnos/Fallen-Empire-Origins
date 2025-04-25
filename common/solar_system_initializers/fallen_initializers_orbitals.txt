@@ -30,11 +30,11 @@ playable_fallen_orbital_1 = {
 
 	neighbor_system = {
 		distance = { min = 0 max = 50 }
-		initializer = "fallen_col_1"
+		initializer = "playable_fallen_col_1"
 	}
 	neighbor_system = {
 		distance = { min = 0 max = 50 }
-		initializer = "fallen_col_2"
+		initializer = "playable_fallen_col_2"
 	}
 }
 
