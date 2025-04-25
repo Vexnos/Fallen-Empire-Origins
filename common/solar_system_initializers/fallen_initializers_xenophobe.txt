@@ -157,9 +157,24 @@ playable_fallen_xenophobe = {
 playable_fallen_xenophobe_neutron_star = {
 	class = "sc_neutron_star"
 
+	init_effect = {
+		giga_field_system_debris = yes
+		spawn_megastructure = {
+			type = "neutronium_gigaforge_ruined"
+			coords_from = event_target:neutroniumgigaforge_star
+		}
+	}
+
 	planet = {
 		class = star
 		orbit_distance = 0
+
+		init_effect = {
+			giga_field_debris = yes
+			save_event_target_as = neutroniumgigaforge_star
+			set_planet_flag = hot_zone # Prevents Rings
+			giga_set_has_mega_flag = yes
+		}
 	}
 
 	planet = {
