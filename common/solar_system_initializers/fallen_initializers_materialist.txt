@@ -107,6 +107,9 @@ playable_fallen_materialist = {
 				set_star_flag = empire_cluster
 			}
 		}
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
 	}
 
 	neighbor_system = {
@@ -129,6 +132,10 @@ playable_fallen_materialist_2 = {
 		type = rocky_asteroid_belt
 		radius = 120
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1

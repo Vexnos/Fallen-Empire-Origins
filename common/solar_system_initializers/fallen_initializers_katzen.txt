@@ -18,6 +18,9 @@ playable_fallen_katzen = {
             }
         }
         generate_home_system_resources = yes
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
     }
 
     planet = {
@@ -218,6 +221,9 @@ playable_fallen_katzen_xenophobe = {
             }
         }
         generate_home_system_resources = yes
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
     }
 
     planet = {
@@ -434,6 +440,9 @@ playable_fallen_katzen_materialist = {
             }
         }
         generate_home_system_resources = yes
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
     }
 
     planet = {
@@ -629,6 +638,10 @@ playable_fallen_katzen_o = {
         radius = 150
     }
 
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
+
     planet = {
         count = 1
         class = pc_giga_o_star
@@ -661,6 +674,10 @@ playable_fallen_xenophile_barren = {
 		type = rocky_asteroid_belt
 		radius = 50
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1
@@ -730,6 +747,10 @@ playable_fallen_xenophobe_barren = {
 		type = rocky_asteroid_belt
 		radius = 50
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1
@@ -830,6 +851,10 @@ playable_fallen_materialist_barren = {
 		type = rocky_asteroid_belt
 		radius = 50
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1

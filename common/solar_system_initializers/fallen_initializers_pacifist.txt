@@ -168,6 +168,9 @@ playable_fallen_pacifist = {
 				set_star_flag = empire_cluster
 			}
 		}
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
 	}
 
 	neighbor_system = {

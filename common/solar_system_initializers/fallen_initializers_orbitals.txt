@@ -3,6 +3,10 @@
 playable_fallen_orbital_1 = {
     class = "sc_b"
 
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
+
     planet = {
         count = 1
         class = star
@@ -40,6 +44,10 @@ playable_fallen_orbital_1 = {
 
 playable_fallen_orbital_2 = {
     class = "sc_m_giant"
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -102,6 +110,10 @@ playable_fallen_col_1 = {
 		type = rocky_asteroid_belt
 		radius = 50
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1
@@ -197,6 +209,10 @@ playable_fallen_col_2 = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1

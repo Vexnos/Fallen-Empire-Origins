@@ -6,7 +6,17 @@ country_event = {
     is_triggered_only = yes
 
     trigger = {
-        has_country_flag = playable_fallen_empire
+        # has_country_flag = playable_fallen_empire
+        OR = {
+            has_origin = origin_playable_fallen_empire
+            has_origin = origin_playable_fallen_empire_xenophobe
+            has_origin = origin_playable_fallen_empire_materialist
+            has_origin = origin_playable_fallen_empire_pacifist
+            has_origin = origin_playable_fallen_empire_machine
+            has_origin = origin_playable_fallen_empire_katzen
+            has_origin = origin_playable_fallen_empire_katzen_xenophobe
+            has_origin = origin_playable_fallen_empire_katzen_materialist
+        }
     }
 
     immediate = {
@@ -14,7 +24,7 @@ country_event = {
             limit = {
                 has_star_flag = playable_fallen_empire
             }
-            create_starbase = { owner = ROOT size = starbase_outpost }
+            create_starbase = { owner = ROOT size = starbase_citadel }
         }
     }
 }

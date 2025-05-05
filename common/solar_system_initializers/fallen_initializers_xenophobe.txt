@@ -125,6 +125,9 @@ playable_fallen_xenophobe = {
 				set_star_flag = empire_cluster
 			}
 		}
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
 	}
 
 	neighbor_system = {
@@ -163,6 +166,7 @@ playable_fallen_xenophobe_neutron_star = {
 			type = "neutronium_gigaforge_ruined"
 			coords_from = event_target:neutroniumgigaforge_star
 		}
+        set_star_flag = playable_fallen_empire
 	}
 
 	planet = {

@@ -28,6 +28,9 @@ playable_fallen_machine = {
 		# 	orbit_angle = 180
 		# 	orbit_distance = 45
 		# }
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
 	}
 
 	planet = {
@@ -267,6 +270,7 @@ playable_fallen_machine_2 = {
 			type = "small_debris_object"
 			location = solar_system
 		}
+        set_star_flag = playable_fallen_empire
     }
 }
 
@@ -391,6 +395,7 @@ playable_fallen_machine_3 = {
 			type = "small_debris_object"
 			location = solar_system
 		}
+        set_star_flag = playable_fallen_empire
     }
 }
 
@@ -500,6 +505,7 @@ playable_fallen_machine_4 = {
 				location = solar_system
 			}
 		}
+        set_star_flag = playable_fallen_empire
 	}
 }
 
@@ -610,5 +616,6 @@ playable_fallen_machine_5 = {
 				location = solar_system
 			}
 		}
+        set_star_flag = playable_fallen_empire
 	}
 }

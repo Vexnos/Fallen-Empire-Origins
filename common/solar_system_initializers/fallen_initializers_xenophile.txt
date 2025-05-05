@@ -30,6 +30,9 @@ playable_fallen_xenophile = {
 			type = "interstellar_assembly_ruined"
 			coords_from = event_target:ruined_interstellar_assembly_planet
 		}
+        owner = {
+            set_country_flag = playable_fallen_empire
+        }
 	}
 
 	planet = {
@@ -161,6 +164,10 @@ playable_fallen_xeno_zoo = {
 		type = rocky_asteroid_belt
 		radius = 80
 	}
+
+    init_effect = {
+        set_star_flag = playable_fallen_empire
+    }
 
 	planet = {
 		count = 1
