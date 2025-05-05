@@ -1,0 +1,20 @@
+namespace = fallen_game_start
+
+country_event = {
+    id = fallen_game_start.001
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        has_country_flag = playable_fallen_empire
+    }
+
+    immediate = {
+        every_system = {
+            limit = {
+                has_star_flag = playable_fallen_empire
+            }
+            create_starbase = { owner = ROOT size = starbase_outpost }
+        }
+    }
+}
