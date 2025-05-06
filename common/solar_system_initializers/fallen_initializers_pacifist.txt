@@ -1,6 +1,7 @@
 @base_moon_distance = 10
 
 playable_fallen_pacifist = {
+    flags = { empire_home_system }
 	class = "rl_standard_stars"
 	usage = origin
 	asteroid_belt = {

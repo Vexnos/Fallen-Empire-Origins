@@ -1,6 +1,7 @@
 @base_moon_distance = 10
 
 playable_fallen_xenophile = {
+    flags = { empire_home_system }
 	usage = origin
 	class = "sc_a"
 	asteroid_belt = {

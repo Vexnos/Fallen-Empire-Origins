@@ -1,6 +1,7 @@
 @base_moon_distance = 10
 
 playable_fallen_materialist = {
+    flags = { empire_home_system }
 	usage = origin
 	class = "rl_standard_stars"
 	asteroid_belt = {

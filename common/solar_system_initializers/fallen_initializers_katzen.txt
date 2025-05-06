@@ -1,6 +1,7 @@
 @base_moon_distance = 10
 
 playable_fallen_katzen = {
+    flags = { empire_home_system }
     usage = origin
     class = "sc_k"
     name = "NAME_Gatzo"
@@ -204,6 +205,7 @@ playable_fallen_katzen = {
 }
 
 playable_fallen_katzen_xenophobe = {
+    flags = { empire_home_system }
     usage = origin
     class = "sc_k"
     name = "NAME_Gatzo"
@@ -423,6 +425,7 @@ playable_fallen_katzen_xenophobe = {
 }
 
 playable_fallen_katzen_materialist = {
+    flags = { empire_home_system }
     usage = origin
     class = "sc_k"
     name = "NAME_Gatzo"
