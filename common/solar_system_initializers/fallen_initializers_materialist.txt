@@ -399,7 +399,7 @@ playable_fallen_beacon_2 = {
     planet = {
         class = pc_ringworld_tech
         orbit_distance = 45
-        orbit_angle = 30
+        orbit_angle = 0
     }
 
     planet = {
