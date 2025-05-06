@@ -369,7 +369,7 @@ playable_fallen_beacon = {
 playable_fallen_beacon_2 = {
     name = "Beacon of Stability"
     flags = { ring_world_built }
-    class = "sc_k"
+    class = "rl_standard_stars"
 
     init_effect = {
         spawn_megastructure = {
@@ -394,12 +394,13 @@ playable_fallen_beacon_2 = {
     planet = {
         class = star
         orbit_distance = 0
+        orbit_angle = 0
     }
 
     planet = {
         class = pc_ringworld_tech
         orbit_distance = 45
-        orbit_angle = 0
+        orbit_angle = -30
     }
 
     planet = {
