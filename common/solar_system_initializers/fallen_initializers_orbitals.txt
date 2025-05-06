@@ -154,7 +154,7 @@ playable_fallen_col_1 = {
 	planet = {
 		count = 1
 		orbit_distance = 20
-		class = ideal_planet_class
+		class = pc_gaia
 		orbit_angle = { min = 90 max = 270 }
 		size = 16
 		deposit_blockers = none
@@ -227,7 +227,7 @@ playable_fallen_col_2 = {
 
 	planet = {
 		count = 1
-		class = ideal_planet_class
+		class = pc_gaia
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 16 }
