@@ -91,6 +91,37 @@ origin_playable_fallen_empire_materialist = {
     }
 }
 
+origin_playable_fallen_empire_beacon = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+    picture = GFX_origin_shattered_ring
+
+    starting_colony = pc_shattered_ring_habitable
+    habitability_preference = pc_shattered_ring_habitable
+    initializers = { playable_fallen_beacon }
+
+    playable = {
+        always = yes
+    }
+
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        ethics = {
+            NOR = { value = ethic_spiritualist value = ethic_fanatic_spiritualist }
+            OR = {
+                value = ethic_materialist
+                value = ethic_fanatic_materialist
+            }
+        }
+    }
+
+    description = origin_playable_fallen_empire_materialist_effects
+
+    random_weight = {
+        base = 0
+    }
+}
+
 origin_playable_fallen_empire_machine = {
     is_origin = yes
     icon = "gfx/interface/icons/origins/origins_elder_race.dds"

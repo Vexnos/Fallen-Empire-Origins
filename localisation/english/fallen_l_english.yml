@@ -18,6 +18,12 @@
   playable_fallen_materialist_NAME: "Materialist Capital"
   playable_fallen_materialist_DESC: "Primary System of the Materialists"
 
+  origin_playable_fallen_empire_beacon: "Elder Race (Materialist: Beacon)"
+  origin_playable_fallen_empire_beacon_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
+  origin_playable_fallen_empire_beacon_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_gaia'] (size: £planetsize£ 20)"
+  playable_fallen_beacon_NAME: "Beacon of Infinity"
+  playable_fallen_beacon_DESC: "The Lord of the Rings"
+
   origin_playable_fallen_empire_machine: "Elder Race (Machine)"
   origin_playable_fallen_empire_machine_desc: "Eons ago your empire reigned supreme, cataloguing the stars and aligning the galaxy as they saw fit until a great cataclysm destroyed all but the small remnants of your empire."
   origin_playable_fallen_empire_machine_effects: "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_shattered_ring']"
