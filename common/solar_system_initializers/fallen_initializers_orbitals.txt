@@ -5,6 +5,10 @@ playable_fallen_orbital_1 = {
 
     init_effect = {
         set_star_flag = playable_fallen_empire
+        spawn_megastructure = {
+            type = "war_moon_debris_cold_barren"
+            coords_from = event_target:war_moon_asteroid
+        }
     }
 
     planet = {
@@ -18,8 +22,18 @@ playable_fallen_orbital_1 = {
 
     change_orbit = 45
 
+    planet = {
+        count = 1
+        orbit_distance = 20
+        orbit_angle = { min = 90 max = 270 }
+
+        init_effect = {
+            save_event_target_as = war_moon_asteroid
+        }
+    }
+
 	planet = {
-		count = { min = 2 max = 10 }
+		count = { min = 2 max = 9 }
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
 
@@ -47,6 +61,10 @@ playable_fallen_orbital_2 = {
 
     init_effect = {
         set_star_flag = playable_fallen_empire
+        spawn_megastructure = {
+            type = "war_moon_debris_cold_barren"
+            coords_from = event_target:war_moon_asteroid
+        }
     }
 
 	asteroid_belt = {
@@ -79,6 +97,17 @@ playable_fallen_orbital_2 = {
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
 	}
+
+    planet = {
+        count = 1
+        class = pc_asteroid
+        orbit_distance = 0
+        orbit_angle = { min = 90 max = 270 }
+
+        init_effect = {
+            save_event_target_as = war_moon_asteroid
+        }
+    }
 
 	planet = {
 		count = { min = 2 max = 5 }
