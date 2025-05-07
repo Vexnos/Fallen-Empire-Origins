@@ -410,10 +410,18 @@ playable_fallen_beacon_2 = {
     }
 
     planet = {
-        name = "Ring Section"
-        class = pc_ringworld_tech
+        name = "Eternal Bastion"
+        class = pc_ringworld_habitable
         orbit_distance = 45
         orbit_angle = -30
+        size = 25
+
+        modifiers = none
+        deposit_blockers = none
+        flags = { ignore_startup_effect megastructure }
+        init_effect = {
+            prevent_anomaly = yes
+        }
     }
 
     planet = {
@@ -424,18 +432,10 @@ playable_fallen_beacon_2 = {
     }
 
     planet = {
-        name = "Eternal Bastion"
-        class = pc_ringworld_habitable
+        name = "Ring Section"
+        class = pc_ringworld_tech
         orbit_distance = 0
         orbit_angle = 30
-        size = 25
-
-        modifiers = none
-        deposit_blockers = none
-        flags = { ignore_startup_effect megastructure }
-        init_effect = {
-            prevent_anomaly = yes
-        }
     }
 }
 
