@@ -243,18 +243,21 @@ playable_fallen_beacon = {
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_tech
         orbit_distance = 45
         orbit_angle = 30
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_seam
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Palatial District"
         class = pc_ringworld_habitable
         orbit_distance = 0
         orbit_angle = 30
@@ -271,18 +274,21 @@ playable_fallen_beacon = {
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_tech
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_seam
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Agrarian District"
         class = pc_ringworld_habitable
         orbit_distance = 0
         orbit_angle = 30
@@ -297,18 +303,21 @@ playable_fallen_beacon = {
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_tech
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_seam
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Industrial District"
         class = pc_ringworld_habitable
         orbit_distance = 0
         orbit_angle = 30
@@ -323,18 +332,21 @@ playable_fallen_beacon = {
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_tech
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_seam
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Trade District"
         class = pc_ringworld_habitable
         orbit_distance = 0
         orbit_angle = 30
@@ -398,18 +410,21 @@ playable_fallen_beacon_2 = {
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_tech
         orbit_distance = 45
         orbit_angle = -30
     }
 
     planet = {
+        name = "Ring Section"
         class = pc_ringworld_seam
         orbit_distance = 0
         orbit_angle = 30
     }
 
     planet = {
+        name = "Eternal Bastion"
         class = pc_ringworld_habitable
         orbit_distance = 0
         orbit_angle = 30
