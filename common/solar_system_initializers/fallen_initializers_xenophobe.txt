@@ -131,10 +131,10 @@ playable_fallen_xenophobe = {
         }
 	}
 
-	neighbor_system = {
-		distance = { min = 0 max = 50 }
-		initializer = "playable_fallen_xenophobe_neutron_star"
-	}
+	# neighbor_system = {
+	# 	distance = { min = 0 max = 50 }
+	# 	initializer = "playable_fallen_xenophobe_neutron_star"
+	# }
 	neighbor_system = {
 		distance = { min = 0 max = 50 }
 		initializer = "playable_fallen_orbital_1"

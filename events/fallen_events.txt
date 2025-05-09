@@ -6,6 +6,55 @@ country_event = {
     is_triggered_only = yes
 
     trigger = {
+        has_origin = origin_playable_fallen_empire_katzen_materialist
+    }
+
+    immediate = {
+        capital_scope = {
+            spawn_system = {
+                min_distance = 5
+                max_distance = 8
+                initializer = playable_fallen_katzen_o
+                hyperlane = yes
+                is_discovered = yes
+            }
+        }
+    }
+
+    # country_event = { id = fallen_game_start.002 days = 5 }
+}
+
+country_event = {
+    id = fallen_game_start.002
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_origin = origin_playable_fallen_empire_xenophobe
+            has_origin = origin_playable_fallen_empire_katzen_xenophobe
+        }
+    }
+
+    immediate = {
+        capital_scope = {
+            spawn_system = {
+                min_distance = 10
+                max_distance = 30
+                initializer = playable_fallen_xenophobe_neutron_star
+                hyperlane = yes
+                is_discovered = yes
+            }
+        }
+    }
+}
+
+country_event = {
+    id = fallen_game_start.003
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
         # has_country_flag = playable_fallen_empire
         OR = {
             has_origin = origin_playable_fallen_empire

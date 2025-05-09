@@ -1,5 +1,7 @@
 on_game_start_country = {
     events = {
-        fallen_game_start.001 # Spawn starbases
+        fallen_game_start.001 # Spawn O class Matrioshka Brain
+        fallen_game_start.002 # Spawn Xenophobe Neutron Star
+        fallen_game_start.003 # Spawn Citadels
     }
 }
