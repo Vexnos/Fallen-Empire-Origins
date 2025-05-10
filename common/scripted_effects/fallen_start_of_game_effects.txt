@@ -700,7 +700,10 @@ generate_start_deposits_and_blockers = {
 	if = {
 		limit = {
 			owner = {
-				has_origin = origin_life_seeded
+                OR = {
+    				has_origin = origin_life_seeded
+                    has_origin = origin_neo_empire
+                }
 			}
 		}
 
@@ -1092,6 +1095,7 @@ generate_start_deposits_and_blockers = {
 				OR = {
 					has_origin = origin_remnants
 					has_origin = origin_slavers
+                    has_origin = origin_zol_nos
 				}
 			}
 		}
@@ -4652,7 +4656,15 @@ toxic_knights_order_habitat_setup = {
 }
 
 create_life_seeded_planet = {
-	set_planet_size = 30
+    if = {
+        limit = {
+            owner = {
+                has_origin = origin_life_seeded
+            }
+        }
+
+        set_planet_size = 30
+    }
 
 	# 5 + 3 energy
 	add_deposit = d_searing_desert
