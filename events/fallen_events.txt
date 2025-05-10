@@ -66,6 +66,7 @@ country_event = {
             has_origin = origin_playable_fallen_empire_katzen_xenophobe
             has_origin = origin_playable_fallen_empire_katzen_materialist
             has_origin = origin_playable_fallen_empire_beacon
+            has_origin = origin_old_curators
         }
     }
 

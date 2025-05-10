@@ -703,6 +703,7 @@ generate_start_deposits_and_blockers = {
                 OR = {
     				has_origin = origin_life_seeded
                     has_origin = origin_neo_empire
+                    has_origin = origin_old_curators
                 }
 			}
 		}
