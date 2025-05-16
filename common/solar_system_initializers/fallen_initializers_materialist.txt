@@ -65,6 +65,11 @@ playable_fallen_materialist = {
 		init_effect = {
 			prevent_anomaly = yes
 			generate_start_deposits_and_blockers = yes
+            create_cluster = {
+                id = fe1_cluster
+                radius = 120
+                center = this.solar_system
+            }
 		}
 	}
 
@@ -102,12 +107,6 @@ playable_fallen_materialist = {
 
 	init_effect = {
 		generate_home_system_resources = yes
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
         owner = {
             set_country_flag = playable_fallen_empire
         }

@@ -69,6 +69,11 @@ playable_fallen_xenophobe = {
 		init_effect = {
 			prevent_anomaly = yes
 			generate_start_deposits_and_blockers = yes
+            create_cluster = {
+                id = fe4_cluster
+                radius = 100
+                center = this.solar_system
+            }
 		}
 
 		moon = {
@@ -119,13 +124,6 @@ playable_fallen_xenophobe = {
 	}
 
 	init_effect = {
-		generate_home_system_resources = yes
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
         owner = {
             set_country_flag = playable_fallen_empire
         }

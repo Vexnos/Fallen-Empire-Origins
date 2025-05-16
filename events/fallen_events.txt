@@ -79,3 +79,43 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = fallen_game_start.004
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_origin = origin_playable_fallen_empire_xenophobe
+            has_origin = origin_playable_fallen_empire_katzen_xenophobe
+        }
+    }
+
+    immediate = {
+        random_system_within_border = {
+            limit = {
+                has_no_non_gate_megastructure = yes
+                NOT = { any_system_planet = { habitable_planet = yes } }
+                NOR = {
+                    is_binary = yes
+                    is_trinary = yes
+                    is_star_class = sc_giga_o_star
+                }
+            }
+            random_system_planet = {
+                limit = { is_star = yes }
+                change_pc = pc_black_hole
+                solar_system = {
+                    set_star_class = sc_black_hole
+                    spawn_megastructure = {
+                        type = "matter_decompressor_ruined"
+                        coords_from = PREV
+                        owner = ROOT
+                        planet = prev
+                    }
+                }
+            }
+        }
+    }
+}

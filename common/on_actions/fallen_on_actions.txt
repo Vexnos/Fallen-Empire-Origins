@@ -3,5 +3,6 @@ on_game_start_country = {
         fallen_game_start.001 # Spawn O class Matrioshka Brain
         fallen_game_start.002 # Spawn Xenophobe Neutron Star
         fallen_game_start.003 # Spawn Citadels
+        fallen_game_start.004 # Black Hole System
     }
 }

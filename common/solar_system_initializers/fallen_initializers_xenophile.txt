@@ -11,12 +11,6 @@ playable_fallen_xenophile = {
 
 	init_effect = {
 		generate_home_system_resources = yes
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
 		if = {
 			limit = {
 				is_inside_nebula = no
@@ -103,6 +97,11 @@ playable_fallen_xenophile = {
 			init_effect = {
 				prevent_anomaly = yes
 				generate_start_deposits_and_blockers = yes
+                create_cluster = {
+                    id = fe3_cluster
+                    radius = 120
+                    center = this.solar_system
+                }
 			}
 		}
 
